@@ -8,7 +8,7 @@ if (isset($_POST['g-recaptcha-response'])){
     exit;
   }
 
-  $secretKey = "6LdgzR0aAAAAAP5dY17stcsEAK2P1VCNLht_hAGR";
+  $secretKey = // retracted for legal reasons
   $ip = $_SERVER['REMOTE_ADDR'];
   // post request to server
   $url = 'https://www.google.com/recaptcha/api/siteverify?secret=' . urlencode($secretKey) .  '&response=' . urlencode($captcha);
@@ -42,12 +42,12 @@ if (isset($_POST['submit'])) {
     $description = $_POST['description'];
 
     $mailTo = "ashwin2201619@gmail.com";
-    $mailAlso = "sgraffles@gmail.com";
+    $mailAlso = // retracted for legal reasons
 
     $host = "ibpsychologytutor.sg";
-    $dbUsername = "ash2201";
-    $dbPassword = "zs41k&7D";
-    $dbName = "ibpsychtutordb";
+    $dbUsername = // retracted for legal reasons
+    $dbPassword = // retracted for legal reasons
+    $dbName = // retracted for legal reasons
 
 	$subject = 'Someone booked a tutor';
 	$message = $name." wants a trial class. Identity: ".$identity." Level ".$level." Grade: ".$grade." Address: ".$address." Postal code: ".$postalCode." Freuqency: ".$frequency." Startdate: ".$startDate." Enddate ".$endDate." Timing: ".$timing." Special needs: ".$specialNeeds." Description: ".$description;
