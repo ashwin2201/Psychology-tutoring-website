@@ -1,0 +1,56 @@
+$theme-colors: (
+  "primary": rgb(214, 15, 240),
+  "danger": #b80c03
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+body {
+  overflow-x: hidden;
+}
+
+.branding {
+  margin: 0;
+  font-weight: 600;
+}
+
+.nav-link {
+  padding: .25rem 0;
+  font-weight: 450;
+  background-color: transparent;
+}
+
+.active {
+  color: rgba(214, 15, 240) !important;
+}
+
+.nav-link:hover {
+  color: rgba(214, 15, 240, 0.8) !important;
+}
+
+.copywriting {
+  height: 1200px;
+  width: 100%;
+  background-color: rgba(216, 217, 219, 0.5);
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-image: url(../img/test-large.jpg);
+  transform: scale(0.6);
+}
+
+/*# sourceMappingURL=main.css.map */
+@media (max-width: 768px) {
+  html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+  }
+}
+
+
+
+
+ 

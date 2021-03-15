@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Book a tuition slot today</title>
+</head>
+<body id="syllabus-body">
+<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <p class="branding text-capitalize navbar-brand" style="font-size: 25px">IB psychology tutor  <div class="mx-2" style="border-left: thin solid rgb(0, 0, 0); height: 35px; margin: 0"><p class="branding navbar-brand" style="color:rgb(255, 19, 19); font-size: 25px; padding: 0">&nbsp;SG</p></div></p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item mx-3"><a href="./index2.html" class="nav-link text-dark">Home</a></li>
+            <li class="nav-item mx-3"><a href="./services.html" class="nav-link text-dark">Services</a></li>
+            <li class="nav-item mx-3"><a href="./syllabus.html" class="nav-link active text-dark">Fees/Book A Tutor</a></li>
+            <li class="nav-item mx-3"><a href="./contact.html" class="nav-link text-dark">Contact Us</a></div>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="copywriting mb-5 p-3">
+    <table class="table table-bordered" style="width: 200px; margin: auto">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Session</th>
+            <th scope="col">Fees</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1 Hr</th>
+            <td>$90</td>
+          </tr>
+        </tbody>
+      </table>
+    <h1 class="text-center m-5" style="font-weight: lighter">Request For <span style="color:rgb(214, 15, 240)">Tutor</span><img style="height: 70px" src="../img/image-removebg-preview.png" alt="request tutor"></h1>
+    <div class="container">
+    <form action="contactForm.php" id="form" method="POST" class="needs-validation" style="width: 600px; margin: auto" novalidate>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="form-group" >
+                    <label for="firstname">Name</label>
+                    <input type="text" name="firstname" id="firstname" class="form-control" required>
+                </div>
+            </div>
+            <div class="col-sm-6">
+            <label for="student/parent">Student/Parent</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="identity" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                      Student
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="identity" id="exampleRadios2" value="option2">
+                    <label class="form-check-label" for="exampleRadios2">
+                      Parent
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group" >
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">Students Level (Scale of 1-10)</label>
+                  <input type="text" class="form-control" id="inputCity" name="level">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputState">Anticipated IB Grade</label>
+                  <select id="inputState" class="form-control" name="grade">
+                    <option selected>Choose...</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                  </select>
+                </div>
+            </div>
+            <div class="form-row form-group">
+                <div class="col-md-6">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address1" name="address">
+                </div>
+                <div class="col-md-6">
+                    <label for="address">Postal Code</label>
+                    <input type="text" class="form-control" id="postalCode" name="postalcode">
+                </div>
+            </div>
+            <div class="form-row form-group">
+                <div class="col-md-6">
+                    <label for="freq">Frequency of Lessons</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="frequency" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                          1 lesson/week
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="frequency" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          2 lesson/week
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row form-group">
+                <div class="col-md-6">
+                    <label for="example-date-input">Tuition Start Date</label>
+                    <input class="form-control" name="startDate" type="date" value="DD/MM/YYYY" id="example-date-input">
+                </div>
+                <div class="col-md-6">
+                    <label for="example-date-input">End Date</label>
+                    <input class="form-control" name="endDate" type="date" value="DD/MM/YYYY" id="example-date-input">
+                </div>
+            </div>
+
+            <div class="form-row form-group">
+                <div class="col-md-12">
+                    <label for="preftiming">Preferred Timing</label>
+                    <select id="inputState" class="form-control" name="prefTiming">
+                        <option selected>Choose...</option>
+                        <option>10:00-11:00 AM</option>
+                        <option>11:00-12:00 PM</option>
+                        <option>12:00-1:00 PM</option>
+                        <option>1:00-2:00 PM</option>
+                        <option>2:00-3:00 PM</option>
+                        <option>3:00-4:00 PM</option>
+                        <option>4:00-5:00 PM</option>
+                        <option>5:00-6:00 PM</option>
+                      </select>
+                </div>
+            </div>
+
+            <div class="form-row form-group">
+                <div class="col-md-12">
+                    <label style="margin-right: 10px" for="checkbox">Any Special Needs</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="specialNeeds" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">ASD</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="specialNeeds" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">ADHD</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" name="specialNeeds" type="checkbox" id="inlineCheckbox3" value="option3">
+                        <label class="form-check-label" for="inlineCheckbox3">Dyslexia</label>
+                      </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="textarea">Description (Needs)</label>
+                <textarea class="form-control" name="description" id="textarea" rows="3"></textarea>
+            </div>
+
+        </div>
+        <div class="text-center">
+            <div class="row text-center d-inline-block">
+                <div class="g-recaptcha mt-5 col-md-12" data-sitekey="6LdgzR0aAAAAAC-hmvsXDMk7dGzrfcdLrcFzM_QD"></div>
+            </div>
+            <div class="row text-center d-block mt-3">
+                <button class="btn btn-primary mt-2" type="submit" name="submit">Submit</button>
+            </div>
+            <!-- secretkey = 6LdgzR0aAAAAAP5dY17stcsEAK2P1VCNLht_hAGR-->
+        </div>
+    </form>
+    </div>
+</div>
+
+<div class="d-flex justify-content-center align-items-center">
+    <img src="../img/syllabus.jpg" alt="syllabus" class="img-fluid">
+</div>
+
+
+
+<script>
+    function onSubmit() {
+        document.getElementById("form").submit();
+   }
+
+    var form = document.querySelector('.needs-validation');
+
+    form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
+    form.classList.add('was-validated');
+})
+</script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeAURoaAAAAAPsLN2Bhu9Af6CAMnfgZj_e5pLWK"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>

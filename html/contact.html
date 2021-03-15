@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <title>Welcome to IB Psychology Tutor</title>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          const uluru = { lat: -1.275957227302274, lng: 103.84586344150138 };
+          // The map, centered at Uluru
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: uluru,
+          });
+          // The marker, positioned at Uluru
+          const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+          });
+        }
+      </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmg3HjUUrsij3ypQrUwhFiGIuatUC_7Ew&callback=initMap&libraries=&v=weekly" defer></script>
+</head>
+<body>
+<header style="margin-bottom: 0; padding-bottom: 0">
+<nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <p class="branding text-capitalize navbar-brand" style="font-size: 25px">IB psychology tutor <div class="mx-1" style="border-left: thin solid rgb(0, 0, 0); height: 35px; margin: 0"><p class="branding navbar-brand" style="color:rgb(255, 19, 19); font-size: 25px; padding: 0">&nbsp;SG</p></div></p>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active mx-3"><a href="./index2.html" class="nav-link text-dark">Home</a></li>
+            <li class="nav-item mx-3"><a href="./services.html" class="nav-link text-dark">Services</a></li>
+            <li class="nav-item mx-3"><a href="./syllabus.html" class="nav-link text-dark">Fees/Book A Tutor</a></li>
+            <li class="nav-item mx-3"><a href="./contact.html" class="nav-link active text-dark">Contact Us</a></div>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="row mt-5">
+    <div class="col-md-6">
+        <p class="h4" style="font-weight: lighter; margin-left: 100px"><b><u>Contact</u></b><img style="height: 50px" src="../img/contacticon-removebg-preview.png" alt="contact"><br>RW<br>#24-09<br>10 Anson Road<br>Singapore 079903</p>
+    </div>
+    <div class="col-md-6">
+        <div id="map" style="height: 400px; width: 200px"></div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
